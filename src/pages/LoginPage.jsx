@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 import { login } from '../hooks/authSlice.js';
 import { useNavigate } from 'react-router-dom';
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const LoginPage = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -21,7 +23,7 @@ const LoginPage = () => {
         e.preventDefault();
         setError('');
         try {
-            const res = await axios.post('http://localhost:8000/api/login', form);
+            const res = await axios.post(`${API_URL}/login`, form);
             if (res.data.status === 'success') {
                 dispatch(login({
                     token: res.data.data.token,

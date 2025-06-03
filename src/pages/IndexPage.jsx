@@ -106,8 +106,7 @@ export default function IndexPage() {
         if (studentCount > 0) ticketTypes.push({ type: "student", quantity: studentCount });
         if (seniorCount > 0) ticketTypes.push({ type: "senior", quantity: seniorCount });
 
-        console.log("Küldött ticket types:", ticketTypes);
-        const res = await axios.post('http://localhost:8000/api/bookings', {
+        const res = await axios.post(`${API_URL}/bookings`, {
           screening_id: selectedScreening.id,
           seats: seatData,
           ticket_types: ticketTypes,
