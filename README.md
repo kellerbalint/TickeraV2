@@ -42,7 +42,7 @@ A simple and modern ticket reservation web application built with **React** and 
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
 - [React Router](https://reactrouter.com/)
-- [Tailwind CSS](https://tailwindcss.com/) (optional if used)
+- [Tailwind CSS](https://tailwindcss.com/) 
 - [Vercel](https://vercel.com/) for deployment
 
 ---
