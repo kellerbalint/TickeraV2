@@ -1,8 +1,9 @@
 # Tickera 🎟️
 
-A simple and modern ticket reservation web application built with **React** and **Vite**.
+A simple and modern ticket reservation web application built with **React** and **Vite** for my frontend development course at ELTE.
 
 🔗 **Live Demo:** [https://tickera-v2.vercel.app/](https://tickera-v2.vercel.app/)
+(Unfortunately, some features such as ticket reservation are not working properly, as the backend server (provided by the university) is still running but has issues handling those specific requests.)
 
 ---
 
